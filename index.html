@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tongkat Selfie Magnetik 4-in-1 Sliderow – Bisa jadi Tripod, Tongkat Selfie, Dudukan HP & Remote Bluetooth. 360° putar, magnet kuat, cocok buat vlog, TikTok, Zoom, traveling!" />
+  <title>Tongkat Selfie Magnetik 4-in-1 | Sliderow – Viral di TikTok & Instagram!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #ff3e4d;
+      --dark: #1a1a1a;
+      --gray: #f5f5f5;
+      --light: #ffffff;
+      --success: #28a745;
+      --yellow: #ffc107;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--dark);
+      background-color: #fafafa;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* === HERO === */
+    .hero {
+      background: linear-gradient(135deg, #fff9f9, #ffecec);
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.3rem;
+      font-weight: 700;
+      margin: 20px 0;
+      color: var(--dark);
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      color: #555;
+    }
+
+    .price {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin: 15px 0;
+    }
+
+    .original-price {
+      text-decoration: line-through;
+      color: #999;
+      font-size: 1.2rem;
+      margin-left: 10px;
+    }
+
+    .hero-media {
+      max-width: 90%;
+      margin: 40px auto;
+      display: block;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+      border-radius: 16px;
+      background: white;
+    }
+
+    /* === FEATURES === */
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 50px;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: var(--primary);
+      margin: 10px auto;
+      border-radius: 2px;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .feature-card {
+      flex: 1;
+      min-width: 250px;
+      max-width: 300px;
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .feature-icon {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .feature-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+    }
+
+    .feature-img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 15px 0;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    /* === GALLERY === */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .gallery-item {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-8px);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      display: block;
+      transition: transform 0.5s;
+    }
+
+    .gallery-item img:hover {
+      transform: scale(1.03);
+    }
+
+    /* === TESTIMONIALS === */
+    .testimonials {
+      background-color: var(--gray);
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .testimonial {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      position: relative;
+    }
+
+    .stars {
+      color: var(--yellow);
+      margin-bottom: 15px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--yellow);
+      color: var(--dark);
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin-left: 8px;
+    }
+
+    /* === CTA === */
+    .cta {
+      background: linear-gradient(to right, var(--primary), #ff6b72);
+      color: white;
+      text-align: center;
+      padding: 60px 0 70px;
+    }
+
+    .cta h2 {
+      font-size: 2.3rem;
+      margin-bottom: 20px;
+    }
+
+    .cta p {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      font-size: 1.15rem;
+      opacity: 0.95;
+    }
+
+    .guarantee {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+      margin: 30px 0;
+      font-size: 1rem;
+    }
+
+    .guarantee-item {
+      background: rgba(255,255,255,0.15);
+      padding: 12px 24px;
+      border-radius: 12px;
+      min-width: 200px;
+    }
+
+    /* OrderOnline Embed Styling */
+    .ooef {
+      max-width: 500px;
+      margin: 30px auto;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 1.9rem; }
+      .hero p { font-size: 1.05rem; }
+      .price { font-size: 1.75rem; }
+      .guarantee { flex-direction: column; align-items: center; }
+      .features { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Tongkat Selfie Magnetik 4-in-1<br><span style="color:var(--primary)">360° Putar + Remote Bluetooth</span></h1>
+      <p>Langsung viral di TikTok & Instagram! Bisa jadi **Tongkat Selfie, Tripod, Dudukan HP, dan Remote** — semua dalam 1 alat praktis.</p>
+      
+      <div class="price">
+        Rp299.000 <span class="original-price">Rp499.000</span>
+      </div>
+      <p>🔥 <strong>Hemat Rp200.000!</strong> Gratis Ongkir</p>
+
+      <img 
+        src="https://cdn.wshopon.com/image/1ae5299e6c1b340355b6fdb6d271e024be2886df.gif" 
+        alt="Sliderow 4-in-1 Magnetic Selfie Stick - 360° Rotation" 
+        class="hero-media"
+        loading="lazy"
+      >
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Kenapa Ribuan Orang di Indonesia Pilih Ini?</h2>
+      <div class="features">
+        <div class="feature-card">
+          <div class="feature-icon">🧲</div>
+          <h3>Magnet Super Kuat</h3>
+          <img 
+            src="https://cdn.wshopon.com/image/2d1bf38fdf5e844615f55e8449b4aeadb69e753c-600.png" 
+            alt="Close-up magnet dan ring logam"
+            class="feature-img"
+            loading="lazy"
+          >
+          <p>Nempel kuat di HP (iPhone/Samsung/Xiaomi) — bahkan pakai casing tebal. <strong>Tidak bikin gores!</strong></p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔄</div>
+          <h3>Putar 360° Bebas</h3>
+          <img 
+            src="https://cdn.wshopon.com/image/65a078671d4aa3ceef5b7688c9dd7e14ea47cad3-600.png" 
+            alt="Tongkat selfie angle depan"
+            class="feature-img"
+            loading="lazy"
+          >
+          <p>Rekam dari atas (food vlog), samping (OOTD), atau bawah (dance TikTok) — tanpa repot!</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱➡️📷</div>
+          <h3>4-in-1: Satu Untuk Semua</h3>
+          <img 
+            src="https://cdn.wshopon.com/image/a2c0454c1d92938fd024645fa1100f6d3e67b769-600.png" 
+            alt="Mode tripod terbuka"
+            class="feature-img"
+            loading="lazy"
+          >
+          <p>Selfie stick → Tripod → Dudukan Zoom/WFH → Remote Bluetooth. Hemat tempat & uang!</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Baterai Tahan Lama</h3>
+          <img 
+            src="https://cdn.wshopon.com/image/47e8f7b4109067ca30be4f2fc7945ceaef8f6946-600.png" 
+            alt="Remote Bluetooth terpisah"
+            class="feature-img"
+            loading="lazy"
+          >
+          <p>Remote bisa dipakai 500x klik (±3 bulan). Cas cepat via USB-C — 30 menit langsung penuh!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lifestyle Gallery -->
+  <section class="section" style="background:#f8f8f8">
+    <div class="container">
+      <h2 class="section-title">Dipakai di Mana-Mana</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img 
+            src="https://cdn.wshopon.com/image/7c492bef3370c300f847afc66670eb8f53186b8c.jpeg" 
+            alt="Vlog food dengan tripod"
+            loading="lazy"
+          >
+        </div>
+        <div class="gallery-item">
+          <img 
+            src="https://cdn.wshopon.com/image/d3a74d8f73a9a08d4d31a0186289c261e87f422a.jpeg" 
+            alt="OOTD selfie dengan tongkat"
+            loading="lazy"
+          >
+        </div>
+        <div class="gallery-item">
+          <img 
+            src="https://cdn.wshopon.com/image/c354f7302fcf0330feef6322b77ad0f3a10463d4.jpeg" 
+            alt="Zoom meeting dengan dudukan"
+            loading="lazy"
+          >
+        </div>
+        <div class="gallery-item">
+          <img 
+            src="https://cdn.wshopon.com/image/118957cb57ace30d82685e2650781cd837acf554.jpeg" 
+            alt="Travel vlog di alam"
+            loading="lazy"
+          >
+        </div>
+        <div class="gallery-item">
+          <img 
+            src="https://cdn.wshopon.com/image/a1d4eafb70fbf962ba15f9ab078c1e2a38fe7c6f.jpeg" 
+            alt="Dance TikTok dengan remote"
+            loading="lazy"
+          >
+        </div>
+        <div class="gallery-item">
+          <img 
+            src="https://cdn.wshopon.com/image/520ffc5657041a596fd0b3bfbdb534bd4038a7ef.jpeg" 
+            alt="Foto keluarga pakai tripod"
+            loading="lazy"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section testimonials">
+    <div class="container">
+      <h2 class="section-title">Ulasan Pelanggan Asli Indonesia</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>“Awalnya ragu, eh pas dipakai buat konten TikTok — langsung viral! Magnetnya kuat banget, gak takut jatuh pas dance.”</p>
+          <strong>Rani, 22 • Content Creator • Bandung <span class="badge">Verified Buyer</span></strong>
+        </div>
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>“Buat WFH & Zoom meeting jadi rapi. Tripodnya stabil, bisa tinggiin HP biar pas di mata. Worth it banget!”</p>
+          <strong>Dimas, 28 • Freelancer • Jakarta <span class="badge">Verified Buyer</span></strong>
+        </div>
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>“Beli buat jalan-jalan ke Bromo. Bisa jadi tripod buat foto keluarga, remote-nya jangkauan jauh. Anak-anak seneng!”</p>
+          <strong>Bu Siti, 35 • Ibu Rumah Tangga • Malang <span class="badge">Verified Buyer</span></strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA with OrderOnline Embed -->
+  <section class="cta">
+    <div class="container">
+      <h2>Promo Spesial Hari Ini Berakhir dalam:</h2>
+      <p style="font-size:1.2rem">Jangan sampai kehabisan — 1.200+ unit terjual minggu ini!</p>
+
+      <div class="countdown" id="countdown-timer" style="display:flex;justify-content:center;gap:12px;margin:20px 0">
+        <div style="background:rgba(255,255,255,0.2);padding:10px 18px;border-radius:10px"><span id="hours">23</span> jam</div>
+        <div style="background:rgba(255,255,255,0.2);padding:10px 18px;border-radius:10px"><span id="minutes">59</span> menit</div>
+        <div style="background:rgba(255,255,255,0.2);padding:10px 18px;border-radius:10px"><span id="seconds">59</span> detik</div>
+      </div>
+
+      <p style="font-size:1.1rem;margin:25px 0">✅ Isi data sekali — langsung proses pesanan & konfirmasi via WhatsApp</p>
+
+      <!-- 🔴 OrderOnline Embed -->
+      <div class="ooef">
+        <form class="orderonline-embed-form" data-username="emma" data-product-slug="gd5tgfgt" data-product-id="69189d5b33be5769dd0a0240" id="oo-embed-form-gd5tgfgt-7240" data-origin="orderonline">
+          <div class="ooef-loader">
+            <style>
+              .ooef-loader{visibility:hidden;opacity:0;position:absolute;left:0;right:0;top:0;bottom:0;display:flex;justify-content:center;align-items:center;flex-direction:column;animation:ooLoadingIn 10s ease;-webkit-animation:ooLoadingIn 10s ease;animation-fill-mode:forwards;overflow:hidden}
+              @keyframes ooLoadingIn{0%{visibility:hidden;opacity:0}20%{visibility:visible;opacity:0}100%{visibility:visible;opacity:1}}
+              @-webkit-keyframes ooLoadingIn{0%{visibility:hidden;opacity:0}20%{visibility:visible;opacity:0}100%{visibility:visible;opacity:1}}
+              .ooef-loader>div,.ooef-loader>div:after{border-radius:50%;width:2.5rem;height:2.5rem}
+              .ooef-loader>div{font-size:10px;position:relative;text-indent:-9999em;border:.25rem solid #f5f5f5;border-left:.25rem solid #55c4cf;-webkit-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0);-webkit-animation:ooLoading 1.1s infinite linear;animation:ooLoading 1.1s infinite linear}
+              .ooef-loader.error>div{border-left:.25rem solid #ff4500;animation-duration:5s}
+              @-webkit-keyframes ooLoading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
+              @keyframes ooLoading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
+            </style>
+            <div aria-live="polite" role="status"><div>Loading...</div></div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Hanya sisa 1 guarantee item -->
+      <div class="guarantee">
+        <div class="guarantee-item">🚚 Pengiriman Cepat 1-3 Hari</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script>
+    // OrderOnline Embed Script
+    if (typeof xLogError != 'function') {
+      var xLogError = function (error) {
+        var req = new XMLHttpRequest();
+        var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack });
+        var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+        req.open('POST', 'https://api.orderonline.id/log', true);
+        req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        req.send(params);
+      };
+    }
+    try {
+      if (typeof xEmbedScript != 'function') {
+        var xEmbedScript = function () {
+          !function(w, d, e, v, id, t, s) {
+            if (d.getElementById(id)) return;
+            t = d.createElement(e); t.async = !0; t.src = v; t.id = id;
+            s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+          }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+        };
+      }
+      if (typeof xEmbedInit != 'function') {
+        var xEmbedInit = function (w, n) {
+          if (w.ooe) return;
+          n = w.ooe = function() { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) };
+          if (!w._ooe) w._ooe = n; n.push = n; n.loaded = !0; n.version = '8.0.4'; n.queue = [];
+        };
+      }
+      xEmbedInit(window);
+      ooe('setup', 'redirect', 'https://emma.orderonline.id');
+      ooe('init', '5f16831a9d8e8e4fb67472e5', '69189d5b33be5769dd0a0240', null, 'oo-embed-form-gd5tgfgt-7240', {
+        "mode":"page",
+        "action":"Klik untuk pemesanan",
+        "title":"Form Pemesanan",
+        "triggerPixel":true,
+        "triggerGtm":false
+      });
+      if (!window.jQuery) {
+        !function(w, d, e, v, id, t, s) {
+          if (d.getElementById(id)) return;
+          t = d.createElement(e); t.async = !0; t.src = v; t.id = id;
+          t.addEventListener('load', xEmbedScript);
+          s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+        }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+      } else {
+        xEmbedScript();
+      }
+    } catch (e) {
+      xLogError(e);
+      throw e;
+    }
+
+    // Countdown Timer
+    function updateCountdown() {
+      const now = new Date();
+      const end = new Date(now);
+      end.setHours(now.getHours() + 24);
+      const diff = end - now;
+      if (diff <= 0) return;
+      const h = Math.floor(diff / 3600000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      const s = Math.floor((diff % 60000) / 1000);
+      document.getElementById('hours').textContent = String(h).padStart(2, '0');
+      document.getElementById('minutes').textContent = String(m).padStart(2, '0');
+      document.getElementById('seconds').textContent = String(s).padStart(2, '0');
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+  </script>
+
+</body>
+</html>
